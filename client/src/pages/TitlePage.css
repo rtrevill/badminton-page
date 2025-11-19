@@ -1,7 +1,7 @@
 .mydrop {
-    position: relative;
-    right: 198px;
-    top: 30px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.5s ease-in, visibility 0s linear 0.5s;
@@ -16,9 +16,10 @@
 
 .textlink {
     color: #0DE6DD;
-    font-size: 30px;
+    font-size: 30px;  
 }
 
 option, select {
     font-size: large;
 }
+

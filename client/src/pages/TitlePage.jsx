@@ -3,12 +3,13 @@ import './TitlePage.css'
 export function TitlePage () {
 
     const backImage = './empty-gymnasium-with-courts.jpg'
+    const playerImage = './cropped-badminton-players.jpg'
 
 
     return (
         <div style={{width: '100vw'}}>
-            <header style={{display: "flex", justifyContent: "space-around", backgroundImage: `url(${backImage})` }}>
-                <img src="./react.svg" alt="group photo"/>
+            <header style={{display: "flex", justifyContent: "space-around", backgroundImage: `url(${backImage})`, height: '290px' }}>
+                <img src="./badminton-gang-1.jpg" alt="group photo"/>
                 <img src="./WANGARATTA-BADMINTON-LOGO.png" alt="logo" style={{width: 300}}/>
                 <div>
                     <ul>
@@ -16,7 +17,7 @@ export function TitlePage () {
                             <a href="" class="textlink">Home</a>
                         </li>
                         <li>
-                            <div style={{position: 'absolute', marginBottom: 5}} class="headdrop">
+                            <div style={{position: 'relative'}} class="headdrop">
                                 <a href="" class="textlink">Game Location</a>
                                 <select id="my-dropdown" class="mydrop" name="selectedOption" style={{}}>
                                     <option value="Learn">Learn Badminton</option>
@@ -35,20 +36,11 @@ export function TitlePage () {
 
                 </div>
                 <div>
-                    <p style={{fontSize: 40, color: "#0DE6DD", width: 169}}>Welcome to Wangaratta Badminton Club</p>
+                    <p style={{fontSize: '34px', color: "#0DE6DD", width: 169}}>Welcome to Wangaratta Badminton Club</p>
                 </div>
             </header>
 
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
+            <div style={{width: '100%', height: '400px', overflow: 'clip', backgroundImage: `url(${playerImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}} class="fixed-bottom" id='divforplayes'>
             </div>
         </div>
     )
