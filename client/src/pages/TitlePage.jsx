@@ -39,9 +39,9 @@ export function TitlePage () {
                     <p style={{fontSize: '34px', color: "#0DE6DD", width: 169}}>Welcome to Wangaratta Badminton Club</p>
                 </div>
             </header>
+                <div style={{width: '100%', height: '400px', overflow: 'clip', backgroundImage: `url(${playerImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}} class="container-fluid" id='divforplayes'>
+                </div>
 
-            <div style={{width: '100%', height: '400px', overflow: 'clip', backgroundImage: `url(${playerImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}} class="fixed-bottom" id='divforplayes'>
-            </div>
         </div>
     )
 }
