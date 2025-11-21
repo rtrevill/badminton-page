@@ -5,6 +5,7 @@ import './App.css'
 import { TitlePage } from './pages/TitlePage'
 import { Outlet } from 'react-router-dom'
 import ContactAndMap from './pages/ContactAndMap'
+import { Mappy } from './components/mappy'
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <>
       <TitlePage />
       <Outlet />
-      <ContactAndMap />
+      <Mappy />
+      {/* <ContactAndMap /> */}
     </>
   )
 }
