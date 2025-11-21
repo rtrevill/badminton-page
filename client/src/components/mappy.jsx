@@ -1,13 +1,15 @@
 import {APIProvider, Map, Pin, AdvancedMarker} from '@vis.gl/react-google-maps';
 
-const locations = [
+
+const PoiMarkers = () => {
+    const locats = [
     {key: 'Cathedral College', location: {lat: -36.38680, lng: 146.32877}},
 ];
 
-const PoiMarkers = (locationy) => {
+
     return (
         <>
-            {locationy.map((poi) => (
+            {locats.map((poi) => (
                         <AdvancedMarker
                             key={poi.key}
                             position={poi.location}>
@@ -32,7 +34,7 @@ export function Mappy(){
                     onCameraChanged={ (ev) =>
                         console.log('camera changed:', ev.detail.center, 'zoom:', ev.detail.zoom)
                     }>
-                    <PoiMarkers locationy={locations} />
+                    <PoiMarkers locations={PoiMarkers} />
                 </Map>
             </APIProvider>
         </div>
